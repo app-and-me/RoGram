@@ -7,8 +7,6 @@ services:
     restart: always
     ports:
       - "${PORT:-2053}:${PORT:-2053}"
-    env_file:
-      - .env
     volumes:
       - .:/app
     command: yarn start --host --port 2053
