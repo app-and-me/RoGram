@@ -9,4 +9,4 @@ services:
       - "${PORT:-2053}:${PORT:-2053}"
     volumes:
       - .:/app
-    command: yarn start --host --port 2053
+    command: yarn dev --host --port 2053
